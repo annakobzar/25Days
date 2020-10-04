@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("fonts/LatoBold/lato-bold.eot");
+  src: url("fonts/LatoBold/lato-bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/LatoBold/lato-bold.woff2") format("woff2"),
+    url("lato-bold.woff") format("woff"),
+    url("fonts/LatoBold/lato-bold.ttf") format("truetype"),
+    url("fonts/LatoBold/lato-bold.svg#latobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("fonts/LatoLight/lato-light.eot");
+  src: url("fonts/LatoLight/lato-light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/LatoLight/lato-light.woff2") format("woff2"),
+    url("fonts/LatoLight/lato-light.woff") format("woff"),
+    url("fonts/LatoLight/lato-light.ttf") format("truetype"),
+    url("fonts/LatoLight/lato-light.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoLightItalic";
+  src: url("fonts/LatoLight/Italic/lato-lightitalic.eot");
+  src: url("fonts/LatoLight/Italic/lato-lightitalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/LatoLightItalic/lato-lightitalic.woff2") format("woff2"),
+    url("fonts/LatoLightItalic/lato-lightitalic.woff") format("woff"),
+    url("fonts/LatoLightItalic/lato-lightitalic.ttf") format("truetype"),
+    url("fonts/LatoLightItalic/lato-lightitalic.svg#latolight_italic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-Playfiar: "Playfair Display", serif;
+  --font-LatoBold: "LatoBold", sans-serif;
+  --font-LatoLight: "LatoLight", sans-serif;
+  --font-LatoLightItalic: "LatoLightItalic" . sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Main Styles */
+
+body {
+  font-family: var(--font-LatoLight);
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(23, 23, 23, 0.7);
+  line-height: 34px;
+}
+
+.wrapper {
+  max-width: 1240px;
+  min-width: 500px;
+  width: 100%;
+  margin: 130px auto;
+}
+
+.main-text {
+  padding: 135px 120px 120px;
+  box-shadow: 4px 4px 68px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-text__title {
+  font: 42px var(--font-Playfiar);
+  margin-bottom: 40px;
+  color: #171717;
+}
+
+.main-text p {
+  margin-bottom: 50px;
+  opacity: 0.7;
+  letter-spacing: -0.09px;
+}
+
+.main-text .main-text__first-paragraph::first-letter {
+  color: #171717;
+  font: 110px var(--font-Playfiar);
+  float: left;
+  line-height: 75%;
+  margin-right: 30px;
+}
+
+.main-text__quote {
+  font-size: 24px;
+  font-family: var(--font-LatoLightItalic);
+  font-style: italic;
+  letter-spacing: -0.12px;
+}
+
+.main-text__quote::before {
+  content: '"';
+  margin-right: 20px;
+  font-size: 60px;
+  line-height: 40px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.discover {
+  text-decoration: none;
+  font-family: var(--font-LatoBold);
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #eaa258;
+  border: 2px solid #eaa258;
+  padding: 25px 75px;
+  transition: all 0.3s;
+}
+
+.discover:hover {
+  background-color: #eaa258;
+  border: 2px solid #eaa258;
+  color: #fff;
+}
