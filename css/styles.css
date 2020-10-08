@@ -1,31 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 @font-face {
-  font-family: "LatoBold";
+  font-family: "Lato";
   src: url("fonts/LatoBold/lato-bold.eot");
   src: url("fonts/LatoBold/lato-bold.eot?#iefix") format("embedded-opentype"),
     url("fonts/LatoBold/lato-bold.woff2") format("woff2"),
     url("lato-bold.woff") format("woff"),
     url("fonts/LatoBold/lato-bold.ttf") format("truetype"),
     url("fonts/LatoBold/lato-bold.svg#latobold") format("svg");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LatoLight";
+  font-family: "Lato";
   src: url("fonts/LatoLight/lato-light.eot");
   src: url("fonts/LatoLight/lato-light.eot?#iefix") format("embedded-opentype"),
     url("fonts/LatoLight/lato-light.woff2") format("woff2"),
     url("fonts/LatoLight/lato-light.woff") format("woff"),
     url("fonts/LatoLight/lato-light.ttf") format("truetype"),
     url("fonts/LatoLight/lato-light.svg#latolight") format("svg");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LatoLightItalic";
+  font-family: "Lato";
   src: url("fonts/LatoLight/Italic/lato-lightitalic.eot");
   src: url("fonts/LatoLight/Italic/lato-lightitalic.eot?#iefix")
       format("embedded-opentype"),
@@ -34,15 +34,16 @@
     url("fonts/LatoLightItalic/lato-lightitalic.ttf") format("truetype"),
     url("fonts/LatoLightItalic/lato-lightitalic.svg#latolight_italic")
       format("svg");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 300;
+  font-style: italic;
 }
 
 :root {
   --font-Playfiar: "Playfair Display", serif;
-  --font-LatoBold: "LatoBold", sans-serif;
+  --font-Lato: "Lato", sans-serif;
+  /* --font-LatoBold: "LatoBold", sans-serif;
   --font-LatoLight: "LatoLight", sans-serif;
-  --font-LatoLightItalic: "LatoLightItalic" . sans-serif;
+  --font-LatoLightItalic: "LatoLightItalic", sans-serif; */
 }
 
 * {
@@ -67,7 +68,7 @@ html {
 /* Main Styles */
 
 body {
-  font-family: var(--font-LatoLight);
+  font-family: var(--font-Lato);
   font-weight: 300;
   font-size: 18px;
   color: rgba(23, 23, 23, 0.7);
@@ -94,7 +95,6 @@ body {
 
 .main-text p {
   margin-bottom: 50px;
-  opacity: 0.7;
   letter-spacing: -0.09px;
 }
 
@@ -108,7 +108,8 @@ body {
 
 .main-text__quote {
   font-size: 24px;
-  font-family: var(--font-LatoLightItalic);
+  font-family: var(--font-Lato);
+  font-weight: 300;
   font-style: italic;
   letter-spacing: -0.12px;
 }
@@ -125,7 +126,8 @@ body {
 
 .discover {
   text-decoration: none;
-  font-family: var(--font-LatoBold);
+  font-family: var(--font-Lato);
+  font-weight: 700;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #eaa258;
